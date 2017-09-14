@@ -62,12 +62,22 @@ body {
     .movie  .thumbnail {
       background: #BFACAC;
       background: linear-gradient(to bottom, #BFACAC 0%, #BFACAC 50%, #ffffff 50%, #ffffff 100%);
-      
+      img {
+        box-shadow: 0 0 8px 0 #8C807E;
+      }
     }
     .book .thumbnail {
       background: #1A3150;
       background: linear-gradient(to bottom, #1A3150 0%, #1A3150 50%, #ffffff 50%, #ffffff 100%);
-      
+      img {
+        box-shadow: 0 0 8px 0 rgba(105,147,157,0.53);
+      }
+    }
+    .card {
+      &:hover img {
+        transition: all .14s linear;
+        transform: scale(1.05);
+      }
     }
 
   }
@@ -84,6 +94,8 @@ body {
   
   .cards .thumbnail img {
     height: 420px;
+    transition: all .15s linear;
+
   }
   
   .product-section {
@@ -96,6 +108,8 @@ body {
       padding-top: 5rem;
       a {
         float: none;
+        background-image: linear-gradient(50deg, #B3A9A7 0%, #90909B 26%, #183654 100%);
+        border-radius: 4px;
       }
     }
   }
@@ -107,14 +121,15 @@ body {
     left: 0;
     top: 0;
     width: 100%;
-    height: 58%;
+    height: 50%;
     z-index: -1;
   }
 
 
 
   .trailer-section {
-      background: lightblue;
+      background: #EFF7FC;
       padding: 5rem;
+      background: #EFF7FC url('../images/video-bg.png') no-repeat left top;
   }
   
