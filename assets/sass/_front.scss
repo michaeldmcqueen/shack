@@ -176,10 +176,9 @@
     }
     img {
       max-width: 320px;
+      width: 100%;
       @media only screen and (min-width : 768px) {
-        max-width: none;
-        width: 100%;
-        
+        max-width: none;        
       }
     }
     &:hover img {
@@ -299,19 +298,23 @@
     padding: 1rem;
     text-align: center;    
     position: relative;
-    transition: all .3s linear; 
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    transition: box-shadow 0.3s ease-in-out;
     margin-bottom: 1rem;
     &:hover {
-      transition: all .3s linear; 
       box-shadow: 2px 2px 18px rgba(0,0,0,1);
+      transition: box-shadow 0.3s ease-in-out;
     }
     @include breakpoint($bp-medium, $no-query: ".no-mq") {
       padding: 1.5rem;
       margin: 0 3rem;
     }
     .call-inner-content {
-      border: 1px solid #fff6;
-      padding: 1.5rem;
+      @include breakpoint($bp-medium, $no-query: ".no-mq") {
+        padding: 1.5rem;
+        border: 1px solid rgba(255, 255, 255, 0.40);
+        
+      }
     }
     * {
       position: relative;
@@ -360,7 +363,6 @@
     &:first-child {
       background: linear-gradient(to bottom, #c4b2b1 0%,#a08987 100%);
       @media only screen and (min-width : 768px) {
-        box-shadow: -11px 2px 8px rgba(0,0,0,0.5);
       }
       
       .btn {
@@ -370,10 +372,9 @@
     &:last-child {
       background: linear-gradient(to bottom, #E8DAAE 0%, #C9BC93 100%);
       @media only screen and (min-width : 768px) {
-        box-shadow: 11px 2px 8px rgba(0,0,0,0.5);
       }
       .btn {
-        background: linear-gradient(to bottom, #CFC199 0%, #B0A47C 100%);
+        background:linear-gradient(to bottom, #c0b38f 0%, #a89e7d 100%);
       }
     }
     .btn {
@@ -426,10 +427,22 @@
         color: #233646;
         font-size: 2rem;
         margin-top: 0;
-        margin-bottom: 3rem;
+        margin-bottom:2rem;
       }
       input, label {
         font-family: $heading-font-family;
+      }
+      button {
+        font-family: $heading-font-family;
+        padding: 13px 35px;
+        background-color: #0f8adb;
+        color: #fff;
+        font-weight: 700;
+        &:hover {
+          background: darken(#0f8adb, 10%);
+          color: #fff;
+        }
+
       }
     }
 }
@@ -441,7 +454,7 @@
 }
 
 .soc li {
-  max-width: 30px;
+  width: 30px;
   display: inline-block;
   list-style: none;
 }
