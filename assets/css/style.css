@@ -858,7 +858,7 @@ ul.pager li a:visited {
 /* line 399, ../sass/_front.scss */
 .signup-section {
   background: #EFF7FC;
-  padding: 1rem 0 23rem;
+  padding: 1rem 0 13rem;
   background: #eff7fc url("../images/video-bg.png") no-repeat left bottom;
   background-size: 60%;
 }
