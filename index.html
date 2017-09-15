@@ -21,13 +21,29 @@
 
     <header class="site-header">
       <!-- Navigation -->
-      <nav class="nav animated fadeInDown">         
-        <li role="presentation"><a href="#">Movie</a></li>
-        <li role="presentation"><a href="#">Book</a></li>
-        <li role="presentation"><a href="#">Discuss</a></li>
-        <li role="presentation"><a href="#">Blog</a></li>
-        <li role="presentation"><a href="#">Contact</a></li>
-      </nav>
+      <nav class="navbar navbar-default">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+      
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li role="presentation"><a href="#">Movie</a></li>
+                <li role="presentation"><a href="#">Book</a></li>
+                <li role="presentation"><a href="#">Discuss</a></li>
+                <li role="presentation"><a href="#">Blog</a></li>
+                <li role="presentation"><a href="#">Contact</a></li>
+            </ul>
+
+          </div><!-- /.navbar-collapse -->
+        </nav>
+
     <!-- Shack Logo -->
     <div class="logo animated fadeInDown">
       <img src="assets/images/logo.png" alt="The Shack" title="The Shack">
@@ -60,16 +76,16 @@
   <main>
 
     <!-- Product Card Section -->
-    <div class="product-section clearfix">
+    <section class="product-section clearfix">
       <header class="site-header-text">
         <h2>Experience The Shack</h2>
         <h4>Watch. Read. Listen</h4>
       </header>
       <div class="cards">
           
-        <div class="card col-md-4 movie">
+        <div class="card col-sm-4 movie">
           <a href="#" class="thumbnail">
-            <img src="assets/images/blueray.jpg" alt=""></a>
+            <img src="assets/images/moview.png" alt=""></a>
             <div class="btn-group" role="group" aria-label="...">
               <button type="button" class="btn btn-default">BlueRay</button>
               <button type="button" class="btn btn-default">DVD</button>
@@ -77,52 +93,63 @@
             </div>
         </div>
 
-        <div class="card col-md-4 book">
+        <div class="card col-sm-4 book">
           <a href="#" class="thumbnail">
-            <img src="assets/images/products/book.jpg" alt=""></a>
+            <img src="assets/images/book.png" alt=""></a>
             <div class="btn-group" role="group" aria-label="...">
-              <button type="button" class="btn btn-default">BlueRay</button>
-              <button type="button" class="btn btn-default">DVD</button>
-              <button type="button" class="btn btn-default">Digital</button>
+              <button type="button" class="btn btn-default">Hardback</button>
+              <button type="button" class="btn btn-default">Paperback</button>
+              <button type="button" class="btn btn-default">Spanish</button>
             </div>
         </div>
-        <div class="card col-md-4">
+        <div class="card col-md-12 col-md-4 audio">
           <a href="#" class="thumbnail">
-            <img src="https://dummyimage.com/300x420/999999/fff.png" alt=""></a>
+            <img src="assets/images/audio.png" alt=""></a>
             <div class="btn-group" role="group" aria-label="...">
-              <button type="button" class="btn btn-default">BlueRay</button>
-              <button type="button" class="btn btn-default">DVD</button>
-              <button type="button" class="btn btn-default">Digital</button>
+              <button type="button" class="btn btn-default">Audiobook</button>
+              <button type="button" class="btn btn-default">Soundtrack</button>
             </div>
         </div>
       </div>
       <div class="visit-store">
-      <a href="#" class="btn btn-primary btn-lg active" role="button">Go to the full store</a>
+      <a href="#" class="btn btn-primary btn-lg active" role="button">View Our Full Store</a>
       </div>
-    </div>
+    </section>
+
+    <section class="calls">
+      <div class="wrap">
+        <div class="call col-md-5 col-md-offset-1">
+          <div class="call-inner-content">
+            <h3>Praise</h3>
+            <h2>James Ryle</h2>
+            <p class="tag-line">Author, Hippo in the Jungle</p>
+            <blockquote>
+              "If God is all powerful and full of love, why doesn’t He do something about the pain and evil in our world?   This book answers that age old question with startling creativity and staggering clarity.  By far one of the best books I have ever read."</blockquote>
+            <a href="#" class="btn btn-default btn-lg btn-block" role="button">View More Praise</a>
+          </div>
+        </div>
+    
+        <div class="call col-md-5 ">
+          <div class="call-inner-content">                
+            <h3>Discuss</h3>
+            <h2>Join in the Discussion</h2>
+            <p class="tag-line">Join our community of people that have been touched by The Shack.</p>
+            <blockquote>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut varius vestibulum volutpat. In neque ante, efficitur sit amet felis sit amet, accumsan convallis augue. Phasellus eget leo euismod augue volutpat sollicitudin quis in velit. Pellentesque eget lorem congue.            
+            </blockquote>
+            <a href="#" class="btn btn-default btn-lg btn-block" role="button">Visit our Forum</a>            
+          </div>
+        </div>
+      </div>
+    </section>
 
     <div class="trailer-section clearfix">
-        <div class="embed-responsive embed-responsive-16by9 col-md-6 col-md-push-6">
-            <iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/CL0yUbSS5Eg?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-          </div>
+        <div class="video-layout">
+
+      </div>
     </div>
 
-    <div class="three-calls">
-      <div class="card col-md-4">
-        <h3>Praise</h3>
-        <h3>James FPhey</h3>
-        <p class="tag-line">Author, Hippo in the Jungle</p>
-        <blockquote>
-            This class uses pointer-events: none to try to disable the link functionality ofs, but that CSS property is not yet standardized and isn't fully supported in Opera 18 and below, or in Internet Explorer 11. In addit, even in browsers that do support pointer-events: none, keyboard navigation remains unaffected, meaning that sighted keyboard users and users of assistive technologies will still be able to activate these links. So to be safe, use custom JavaScript to disable such links.
-        </blockquote>
-      </div>
-      <div class="card col-md-4">
-        <h3>Title</h3>
-      </div>
-      <div class="card col-md-4">
-        <h3>Title</h3>
-      </div>
-    </div>
+
 
 
   </main>
@@ -130,7 +157,7 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>  </body>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <script type="text/javascript">
 
@@ -138,8 +165,15 @@
       // Changing the defaults
       window.sr = ScrollReveal({ reset: true });
 
-      // Customizing a reveal set
       sr.reveal('.card', { 
+        origin: 'top',
+        distance: '50px',
+        duration: 2000,
+        delay: 1,
+        scale: 0
+      }, 50);
+
+      sr.reveal('.call', {
         origin: 'top',
         distance: '50px',
         duration: 2000,
@@ -155,6 +189,14 @@
         scale: 0
       });
 
+      sr.reveal('.visit-store', { 
+        origin: 'top',
+        distance: '50px',
+        duration: 2000,
+        delay: 1,
+        scale: 0
+      });
+
       sr.reveal('.site-header-text h4', { 
         origin: 'top',
         distance: '50px',
@@ -163,13 +205,12 @@
         scale: 0
       });
 
-      // window.sr = ScrollReveal();
-      // sr.reveal('.card', { duration: 2000 
-      // }, 50);
 
       $("#playTrailer").on('hidden.bs.modal', function (e) {
     $("#playTrailer iframe").attr("src", $("#playTrailer iframe").attr("src"));
 });
     </script>
+  </body>
+
     
 </html>
