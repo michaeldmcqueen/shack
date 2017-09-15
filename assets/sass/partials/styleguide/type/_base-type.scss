@@ -3,6 +3,16 @@ html {
   -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
 }
 
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+    /* Retina-specific stuff here */
+    html {
+      font: normal 100%/1.65 "Playfair Display", serif;
+      
+    }
+}
+
 
 body {
   color: $body-copy-color;
